@@ -1,4 +1,4 @@
-🚀 Strike of the Cosmos (Working Title)
+🚀 Strike of the Cosmos (Space Defenders)
 
 A browser-based wave survival shooter inspired by classic arcade games like Strikers 1945. Built using HTML, CSS, and JavaScript, the game immerses you in a space battle where Earth is under attack by biomechanical alien forces.
 
