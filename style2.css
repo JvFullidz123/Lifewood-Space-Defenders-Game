@@ -1,0 +1,55 @@
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+        #gameContainer {
+            width: 640px;
+            height: 640px;
+            position: relative;
+            background-color: #000033;
+            border: 2px solid #00ff00;
+            overflow: hidden;
+        }
+        #player {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background-color: #00ff00;
+            bottom: 20px;
+            left: 304px;
+        }
+        .enemy {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background-color: #ff0000;
+        }
+        .bullet {
+            position: absolute;
+            width: 4px;
+            height: 12px;
+            background-color: #ffffff;
+        }
+        #scoreDisplay, #livesDisplay, #levelDisplay {
+            position: absolute;
+            color: white;
+            font-size: 16px;
+        }
+        #scoreDisplay {
+            top: 10px;
+            left: 10px;
+        }
+        #livesDisplay {
+            top: 10px;
+            right: 10px;
+        }
+        #levelDisplay {
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }

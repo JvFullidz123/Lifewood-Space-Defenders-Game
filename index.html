@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Armada</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('assets/img/index_background.jpg') no-repeat center center fixed; /* Background image */
+            background-size: cover; /* Cover the entire background */
+            margin: 0;
+            font-family: 'Orbitron', sans-serif; /* Space-themed font */
+            color: white;
+        }
+        canvas {
+            border: 2px solid white;
+            background-color: #111;
+        }
+        #hud {
+            display: flex;
+            justify-content: space-between;
+            width: 768px; /* Match the canvas width */
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        #hud div {
+            flex: 1;
+            text-align: center;
+        }
+        #game-title {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 42px; /* Increase font size for emphasis */
+    font-weight: bold;
+    color: cyan; /* Neon blue/cyan color */
+    font-family: 'Press Start 2P', cursive; /* Retro arcade font */
+    
+    /* Neon glow effect */
+    text-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan, 0 0 40px rgba(0, 255, 255, 0.7);
+    
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+/* Keyframes for a pulsing neon effect */
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan, 0 0 40px rgba(0, 255, 255, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 60px rgba(0, 255, 255, 0.9);
+    }
+}
+    </style>
+    <!-- Add a link to a space-themed font -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- Add a link to a different space-themed font for the title -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Game Title -->
+    <div id="game-title">Space Defenders</div>
+
+    <!-- Heads-Up Display (HUD) -->
+    <div id="hud">  
+        <div id="score">Score: 0</div>
+        <div id="level">Level: 1</div>
+        <div id="health">Health: 3</div>
+    </div>
+    <canvas id="gameCanvas" width="768" height="1024"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>
