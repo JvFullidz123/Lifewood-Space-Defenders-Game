@@ -121,3 +121,5 @@ Code: AI-generated structure, refined by the author
 🎓 Author Notes
 
 This project serves both as a creative endeavor and an exploration of collaborative AI-assisted development. While the game is playable, it is a work-in-progress and will continue to grow with feedback and new ideas.
+
+You can play this game by downloading the whole folder and add it to your directory folder to run it.
